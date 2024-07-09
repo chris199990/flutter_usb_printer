@@ -69,7 +69,7 @@ class FlutterUsbPrinter {
   /// [printByte]
   Future<bool?> printByte(List<int> data) async {
     Map<String, dynamic> params = {"data": data};
-    final bool? result = await _channel.invokeMethod('write', params);
+    final bool? result = await _channel.invokeMethod('printByte', params);
     return result;
   }
 }
